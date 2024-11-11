@@ -1,0 +1,137 @@
+/* style.css */
+
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5e9; /* สีพื้นหลังอ่อน */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4caf50; /* สีเขียวเข้ม */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #388e3c; /* เส้นขอบด้านล่าง */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เมื่อชี้ */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus {
+    border-color: #4caf50; /* เปลี่ยนสีเมื่อโฟกัส */
+}
+
+form input[type="submit"] {
+    background: #4caf50; /* สีเขียว */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+}
+
+form input[type="submit"]:hover {
+    background: #45a049; /* สีเขียวเข้มขึ้นเมื่อชี้ */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #4caf50; /* สีเขียว */
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+/* Table Styles */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.user-list th, .user-list td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.user-list th {
+    background-color: #4caf50; /* สีเขียว */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* ลดความกว้างบนอุปกรณ์มือถือ */
+    }
+
+    nav ul li {
+        display: block; /* เปลี่ยนเป็นบล็อกในมือถือ */
+        margin: 5px 0; /* ระยะห่างระหว่างรายการ */
+    }
+}
